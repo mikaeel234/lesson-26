@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+
+
+
+
+
+
+
+
+
+    <script>
+        class student {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            display() {
+                return "My name is " + this.name + "and my age is " + this.age
+            }
+        }
+        var stu1 = new student("riya", 6)
+        document.getElementById("demo").innerHTML = stu1.display()
+        var stu2 = new student("mikaeel", 16)
+        document.getElementById("demo1").innerHTML = stu2.display()
+    </script>
+</body>
+
+</html>
